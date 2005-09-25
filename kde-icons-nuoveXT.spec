@@ -1,6 +1,6 @@
-#$Revision: 1.1 $, $Date: 2005-09-25 16:54:30 $
+#$Revision: 1.2 $, $Date: 2005-09-25 17:07:21 $
 
-%define         _name nuoveXT
+%define		_name nuoveXT
 
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
@@ -13,6 +13,7 @@ Source0:	http://nuovext.pwsp.net/files/%{_name}-kde-%{version}.tar.gz
 # Source0-md5:	3d8d4997909b9717b78a4fcf05ad01e2
 URL:		http://www.kde-look.org/content/show.php?content=26449
 Requires:	kdelibs
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,7 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}
 
-%{__tar} xfz %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}/
+%{__tar} xfz %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+rm $RPM_BUILD_ROOT%{_iconsdir}/*/*~
 
 %clean
 rm -rf $RPM_BUILD_ROOT
