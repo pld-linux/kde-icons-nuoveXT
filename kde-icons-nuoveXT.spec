@@ -1,16 +1,16 @@
-#$Revision: 1.2 $, $Date: 2005-09-25 17:07:21 $
+#$Revision: 1.3 $, $Date: 2005-12-28 21:13:49 $
 
 %define		_name nuoveXT
 
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-icons-%{_name}
-Version:	1.5
+Version:	1.6
 Release:	1
-License:	Creative Commons Attribution-NonCommercial-ShareAlike 2.5 License
+License:	GPL
 Group:		Themes
 Source0:	http://nuovext.pwsp.net/files/%{_name}-kde-%{version}.tar.gz
-# Source0-md5:	3d8d4997909b9717b78a4fcf05ad01e2
+# Source0-md5:	5667676200403755c171b48904961f39
 URL:		http://www.kde-look.org/content/show.php?content=26449
 Requires:	kdelibs
 BuildArch:	noarch
