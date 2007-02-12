@@ -1,9 +1,9 @@
-#$Revision: 1.3 $, $Date: 2005-12-28 21:13:49 $
+#$Revision: 1.4 $, $Date: 2007-02-12 00:48:58 $
 
 %define		_name nuoveXT
 
 Summary:	KDE icons - %{_name}
-Summary(pl):	Motyw ikon do KDE - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do KDE - %{_name}
 Name:		kde-icons-%{_name}
 Version:	1.6
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 %{_name} is an icon theme with a MacOsX character.
 
-%description -l pl
+%description -l pl.UTF-8
 %{_name} to motyw ikon z charakterem MacOsX.
 
 %prep
